@@ -605,10 +605,8 @@ static const CGFloat minYValue = 15;
                     [[NSUserDefaults standardUserDefaults] synchronize];
                     
                     _highScore.string = [NSString stringWithFormat:@"%d", highScore];
-                    
-                    [MGWU submitHighScore:[[[NSUserDefaults standardUserDefaults] objectForKey:@"heheheHthisisforSlaaa"] integerValue] byPlayer:[[NSUserDefaults standardUserDefaults] objectForKey:@"Username"] forLeaderboard:@"TwinAllTime"];
                 }
-                
+                [MGWU submitHighScore:[[[NSUserDefaults standardUserDefaults] objectForKey:@"heheheHthisisforSlaaa"] integerValue] byPlayer:[[NSUserDefaults standardUserDefaults] objectForKey:@"Username"] forLeaderboard:@"TwinAllTime"];
             }
             
             if(obstacle.position.x > 360){

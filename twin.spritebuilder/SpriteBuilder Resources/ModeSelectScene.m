@@ -153,6 +153,7 @@ static const int MAXLIVES = 7;
     //[audio preloadEffect:@"Sounds/zapThreeToneUp.mp3"];
     //[audio playEffect:@"Sounds/zap1.mp3"];
     //[audio stopBg];
+    //[MGWU submitHighScore:221 byPlayer:@"TOnK" forLeaderboard:@"TwinAllTime"];
 }
 
 
