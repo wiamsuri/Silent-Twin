@@ -19,8 +19,6 @@
     NSString *usernameResult = @"";
     NSString *scoreResult = @"";
     
-    
-    NSLog(@"%lu",(unsigned long)scoreArray.count);
     if(scoreArray.count >= 40){
         for(int i = 0; i < 40; i++){
             usernameResult = [usernameResult stringByAppendingString:[[scoreArray objectAtIndex:i] objectForKey:@"name"]];

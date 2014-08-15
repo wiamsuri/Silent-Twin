@@ -978,7 +978,7 @@
 					"-lsqlite3.0",
 				);
 				PRODUCT_NAME = Twin;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5FC6371D-34B4-456C-92F1-256FF8745CA1";
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
@@ -991,8 +991,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Watt Iamsuri (3F9X5M3EV4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Watt Iamsuri (3F9X5M3EV4)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1025,7 +1025,7 @@
 					"-lsqlite3.0",
 				);
 				PRODUCT_NAME = Twin;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5FC6371D-34B4-456C-92F1-256FF8745CA1";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;

@@ -53,6 +53,26 @@
         [[NSUserDefaults standardUserDefaults] setObject:@"startlana" forKey:@"FIRSTSTART"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"FIRSTSTART1.1"] == nil){
+        //for life left
+        NSDate *now = [NSDate date];
+        NSNumber *livesLeft = [[NSNumber alloc] initWithInt:7];
+        NSDictionary *livesandtime = [[NSDictionary alloc] initWithObjectsAndKeys:now, @"timeSinceLastPlay", livesLeft,@"livesleft", nil];
+        [[NSUserDefaults standardUserDefaults] setObject:livesandtime forKey:@"TimeAndLives"];
+        
+        //unmuted sound
+        NSNumber *muted = [[NSNumber alloc] initWithBool:false];
+        audio.effectsMuted = false;
+        [[NSUserDefaults standardUserDefaults] setObject:muted forKey:@"mutedSetting"];
+        
+        NSNumber *bgMuted = [[NSNumber alloc] initWithBool:false];
+        audio.bgMuted = false;
+        [[NSUserDefaults standardUserDefaults] setObject:bgMuted forKey:@"bgMuted"];
+        
+        //make this part not run again ever
+        [[NSUserDefaults standardUserDefaults] setObject:@"start1.1lana" forKey:@"FIRSTSTART1.1"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     //check if username is blank. if yes then ask to enter
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"Username"] == nil || [[[NSUserDefaults standardUserDefaults] objectForKey:@"Username"] isEqual: @""]){
         [_usernameNode runAction:[CCActionEaseBounceOut actionWithAction:[CCActionMoveTo actionWithDuration:0.85f position:ccp(_usernameNode.position.x, 450)]]];

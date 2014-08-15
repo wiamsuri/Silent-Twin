@@ -43,7 +43,6 @@
     [MGWU setGameLinkURL:@"https://itunes.apple.com/us/app/silent-twin/id903950027?mt=8&uo=4"];
     
     [MGWU setIconURL:@"MGWUIcon@2x.png"];
-    
     [MGWU noFacebookPrompt];
     
     [MGWU setReminderMessage:@"Come back and play Silent Twin!"];
